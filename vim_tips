@@ -1,0 +1,22 @@
+short docs on vim editor tips
+
+#1 
+`nohlsearch` is used to exit current highlighted search pattern in vim editor
+  
+#2
+An pattern in vim editor can be replaced by sed command
+
+Type following command in vim editor
+`:/search_this/replace_by_this` - eg: :/Helloworld/Hellopython
+where Helloworld is replaced by Hellopython
+
+Replace after confirm
+`:/search_this/replace_by_this/gc` - eg:/Helloworld/Hellopython/gc
+
+#3
+When any directory or file location has be replaced. `\` operator has to be used to escape '\' operator.
+consider file location is /usr/local to replaced by /opt/alt. The usual approach is like,
+:s/\/usr\/local\//\/opt\/alt\//
+
+It can also be done like
+:s!/usr/local/!/opt/alt/!
