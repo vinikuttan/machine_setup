@@ -1,0 +1,7 @@
+set number                                                                                                              
+set tabstop=4                                                                                                           
+set shiftwidth=4                                                                                                        
+set expandtab                                                                                                           
+highlight ColorColumn ctermbg=lightgrey                                                                                 
+set colorcolumn=120                                                                                                     
+match ErrorMsg '\s\+$'
