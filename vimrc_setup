@@ -1,7 +1,32 @@
-set number                                                                                                              
+set nocompatible              " be iMproved, required                                                                   
+filetype off                  " required                                                                                
+                                                                                                                        
+" set the runtime path to include Vundle and initialize                                                                 
+set rtp+=~/.vim/bundle/Vundle.vim                                                                                       
+call vundle#begin()                                                                                                     
+                                                                                                                        
+" let Vundle manage Vundle, required                                                                                    
+Plugin 'VundleVim/Vundle.vim'                                                                                           
+Plugin 'bling/vim-airline'                                                                                              
+Plugin 'vim-airline/vim-airline-themes'                                                                                 
+                                                                                                                        
+" All of your Plugins must be added before the following line                                                           
+call vundle#end()            " required                                                                                 
+filetype plugin indent on    " required                                                                                 
+                                                                                                                        
 set tabstop=4                                                                                                           
 set shiftwidth=4                                                                                                        
 set expandtab                                                                                                           
-highlight ColorColumn ctermbg=lightgrey                                                                                 
 set colorcolumn=120                                                                                                     
-match ErrorMsg '\s\+$'
+highlight ColorColumn guibg=#2d2d2d ctermbg=246                                                                         
+match ErrorMsg '\s\+$'                                                                                                  
+set laststatus=2                                                                                                        
+set encoding=utf-8                                                                                                      
+set t_Co=256                                                                                                            
+let g:airline_powerline_fonts = 1                                                                                       
+let g:airline#extensions#tabline#enabled = 1                                                                            
+let g:airline#extensions#tabline#left_alt_sep = '»'                                                                     
+" let g:airline_left_sep = '▶'                                                                                          
+" let g:airline_right_sep = '◀'                                                                                         
+let g:airline_left_sep = '»'                                                                                            
+let g:airline_right_sep = '«'
