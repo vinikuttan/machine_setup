@@ -20,3 +20,28 @@ consider file location is /usr/local to replaced by /opt/alt. The usual approach
 
 It can also be done like
 :s!/usr/local/!/opt/alt/!
+
+#4
+to change particular word/statement in vim to uppe/lower case.
+press `V`(visual mode) and select the word/statement to be modified.
+Then do `GU` - for upper case.
+        `Gu` - for lower case.
+        
+#5
+Insert new line
+press `O` to insert new line after cursor pointed line.
+press 'o` to insert new line before cursor pointed line.
+
+#6 
+search highlighted content
+place the cursor on the word to be searched
+press `*` to search from start
+press `#` to search from last
+
+#7
+search a string
+press `/` and type the word to be searched from first.
+To search from last, press `?` and type the word to be searched.
+
+
+   
